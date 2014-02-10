@@ -21,7 +21,11 @@
 			<div id='header-border'>
 				<div id='conteneur_header'>
 					<div id='logo'>
-						<img src="images/logo_ARC.png">
+						<a href='index.php'><img src="images/logo_ARC.png"></a>
+					</div>
+
+					<div class='onglet'>
+						
 					</div>
 					
 					<!-- bloc du menu -->

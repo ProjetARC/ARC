@@ -12,7 +12,7 @@
 			ARC a noué des partenariats stratégiques avec des constructeurs et éditeurs internationaux :
 		</p>
 
-		<table>
+		<table class='logos_partenaires'>
 				<tr>
 					<td><img src='images/partenaires/microsoft.jpg'/></td>
 					<td><img src='images/partenaires/cisco.jpg'/></td>

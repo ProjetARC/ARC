@@ -350,3 +350,23 @@ a {
 .clique {
 	cursor: pointer;
 }
+
+/*************** LOGO PARTENAIRES *************/
+
+.logos_partenaires {
+	text-align: center;
+}
+
+.logos_partenaires img{
+	width: 70%;
+}
+
+/************* onglet *****************/
+
+.onglet {
+	width: 100px;
+	height: 30px;
+	background-color: #0089CF;
+	float: right;
+	margin-right: 30px;
+}
