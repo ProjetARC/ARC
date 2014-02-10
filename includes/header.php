@@ -10,6 +10,7 @@
 		<script type="text/javascript" src="js/carrousel.js"></script>
 		<script type="text/javascript" src="js/autoHeight.js"></script>
 		<script type="text/javascript" src="js/header.js"></script>
+		<script type="text/javascript" src="js/prestation.js"></script>
 		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 		<script type="text/javascript" src="js/google_maps.js"></script>
 		
