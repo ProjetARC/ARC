@@ -343,8 +343,9 @@ a {
 
 .plus {
 	float: right;
-	font-size: 25px;
+	font-size: 22px;
 	font-style: bold;
+	color: #E7E6E6;
 }
 
 .clique {
