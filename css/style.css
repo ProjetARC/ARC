@@ -97,10 +97,13 @@ a {
 #webmail {
 	color:#0089CF;
 	border-radius: 10px;
+	display: inline-block;
+	width: 870px;
 }
 
 	.webmail_contenu {
 		float: left;
+		clear: both;
 	}
 
 	.webmail_logo {
@@ -190,7 +193,6 @@ a {
 	width: 950px;
 	padding-top:2px;
 	margin: 0 auto;
-	position:static;
 	font-size:15px;
 	border:1px solid #C1C1C1;
 	border-top:1px solid white;
