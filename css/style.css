@@ -1,0 +1,350 @@
+@font-face {
+    font-family: "Guifx";
+    src: url('../fonts/Guifx v2 Transports.ttf');
+}
+
+@font-face {
+    font-family: "LigatureSymbols";
+    src: url('LigatureSymbols-2.11.ttf') format('truetype');
+}
+
+.LigatureSymbols {
+     font-family: 'LigatureSymbols';
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+html, body {
+	font-family: arial;
+	margin:0;
+	padding:0;
+}
+
+body {
+	background:#F1F1F1;
+}
+
+li, a {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color:black;
+}
+
+#header {
+	padding-top: 0;
+	background:white;
+	border-bottom:solid 4px #0089CF;
+	z-index:4;
+	-webkit-transition: 0.4s;
+}
+
+	#header-border {
+		top:0;
+		border-bottom:solid 4px #F5931F;
+	}
+	
+	#conteneur_header {
+		margin: 0 auto;
+		width: 950px;
+		height: 50px;
+	}
+
+	.floatable {
+		box-shadow:0px 2px 8px rgba(0,0,0,0.25);
+	}
+
+.orange {
+	border-bottom:2px solid #F5931F;
+	color: #F5931F;
+}
+
+.bleu {
+	border-bottom:2px solid #0089CF;
+	color: #0089CF;
+}
+
+#contenu {
+	margin :27px 40px;
+}
+	
+	#contenu p {
+		color:black;
+		text-indent: 20px;
+	}
+	
+	.titre {
+		font-size:20px;
+		margin-top:0; 
+		margin-left:0;
+		text-align:left;
+	}
+	
+#presentation {
+	color:#F5941F;
+}
+
+#webmail {
+	color:#0089CF;
+	border-radius: 10px;
+}
+
+	.webmail_contenu {
+		float: left;
+	}
+
+	.webmail_logo {
+		float: left;
+		margin-left: 30px;
+	}	
+
+#logo {
+	width: 103px;
+	float:left;
+	margin-left:40px;
+	margin-top:1px;
+}
+
+.lien {
+	background:white;
+	width:100px;
+	height:50px;
+	text-align: center;
+	color:#7E7E7E;
+	text-shadow:1px 1px 1px white;
+	line-height: 3;
+	display:block;
+	float:right;
+}
+
+/************* MENU *************/
+
+#navigation1 {
+	float:right;
+}
+
+		#menu1 a {
+			display :block;
+			margin-left:5px;
+		}
+
+			#menu1 a span {
+				font-size: 20px;
+			}
+
+		#menu1 li {
+			display:inline-block;
+			padding-right:5px;
+		}
+
+		#menu1 li:hover {
+			border-bottom:2px solid #F5931F;
+		}
+
+			#menu1 li:hover span {
+				color:#F5931F;
+			}
+
+			.page {
+				border-bottom:2px solid #0089CF;
+			}
+
+				.page a span{
+					color: #0089CF;
+				}
+
+/************* CONTACT *************/
+
+
+
+	.google-map {
+		position:absolute;
+		float:left;
+		height:;
+	}
+
+		#map {
+			height:500px;
+			width:500px;
+		}
+
+	.info-contact p {
+		top:0;
+		float:right;
+	}
+
+/************* CONTENEUR INDEX *************/
+
+#conteneur {
+	background:white;
+	width: 950px;
+	padding-top:2px;
+	margin: 0 auto;
+	position:static;
+	font-size:15px;
+	border:1px solid #C1C1C1;
+	border-top:1px solid white;
+	border-bottom:1px solid white;
+}
+
+/************* CARROUSEL *************/
+.carrousel-conteneur 
+{
+	margin:-3px auto 40px;
+	height:350px;
+	width:auto;
+	overflow: hidden;
+	position:relative;
+}
+
+	.carrousel-selecteur
+	{
+		height:349px;
+		width:164px;
+		margin-left:-165px;
+		float:left;
+		position:relative;
+		z-index:2;
+		overflow:auto;
+	}
+
+		.carrousel-selecteur div
+		{
+			background:red;
+			height:52px;
+			width:140px;
+			margin:5px;
+			-webkit-transition: 0.4s;
+			cursor: pointer;
+		}
+
+			.carrousel-selecteur div img
+			{
+				height:100%;
+				width:100%;
+			}
+
+	.carrousel-selecteur-languette 
+	{
+		height:23px;
+		width: 23px;
+		margin-top:162px;
+		margin-left:-1px;
+		position:absolute;
+		display:block;
+		font-family: "Guifx";
+		color:#CCC;
+		font-size:23px;
+		text-align: center;
+		line-height: 1;
+		z-index:1;
+		cursor: pointer;
+	}
+
+		.carrousel-selecteur-languette:hover
+		{
+			color:white;
+		}
+	
+	.carrousel {
+		background:white;
+		height:350px;
+		margin-top:0;
+		overflow:hidden;
+	}
+
+		.diapo {
+			height:350px;
+			margin-top:0;
+		}
+		
+			.diapo li{
+				width:950px;
+				height:350px;
+				list-style:none;
+				float: right;
+				position:relative;
+			}
+
+	.bouton-lecture {
+	    float: right;
+	    position: relative;
+	    width: 23px;
+	    height: 23px;
+	    margin: -40px 10px;
+	    border: 5px solid transparent;
+	    border-radius: 50%;
+	    text-align: center;
+	    font-size: 20px;
+	    line-height: 1.2;
+	    color: #CCCCCC;
+	    font-family: "Guifx";
+	    -webkit-transition: 0.3s;
+	    cursor: pointer;
+	}
+
+		.bouton-lecture:hover {
+			border: 5px solid white;
+			background:white;
+		}
+
+			
+
+/************* FOOTER *************/
+
+#footer {
+	border-top: 1px solid #E7E6E6;
+	font-size:10px;
+	width:90%;
+	margin: 0 auto;
+}
+
+#footer p{
+	margin-right: 20px;
+}
+
+#footer table {
+	margin: 0 auto;
+}
+
+#pre-footer {
+	border-top:4px solid #0089CF;
+	padding-top: -30px;
+	font-size:12px;
+	background:white;
+}
+
+	#contenu-pre-footer {
+		margin:10px auto;
+		text-align: center;
+	}
+
+#pre-footer-orange {
+	border-top:4px solid #F5931F;
+}
+
+/************* CONTENU PRESTATIONS **************/
+
+.contenu_prestations ul li{
+	list-style-type: disc;
+}
+
+.plus {
+	float: right;
+	font-size: 25px;
+	font-style: bold;
+}
+
+.clique {
+	cursor: pointer;
+}
