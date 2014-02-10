@@ -11,7 +11,7 @@
 		<script type="text/javascript" src="js/autoHeight.js"></script>
 		<script type="text/javascript" src="js/header.js"></script>
 		<script type="text/javascript" src="js/prestation.js"></script>
-		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<!--<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>-->
 		<script type="text/javascript" src="js/google_maps.js"></script>
 		
 		<title>ARC Informatique :: Bienvenue</title>
@@ -25,8 +25,10 @@
 						<a href='index.php'><img src="images/logo_ARC.png"></a>
 					</div>
 
-					<div class='onglet'>
-						
+					<div class='conteneur_bouton'>
+						<div class='segment_gauche'></div>
+						<div class='bouton_menu'></div>
+						<div class='segment_droite'></div>
 					</div>
 					
 					<!-- bloc du menu -->

@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 	var clique = 0;
-	$('#conteneur_header').append('<a class="lien" href="#">Menu</a>');
+	$('.bouton_menu').append('<span class="lien">Menu</span>');
 	$('#menu1').hide();
 	$('#conteneur_menu').hide();
 
