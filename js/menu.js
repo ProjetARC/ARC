@@ -1,28 +1,13 @@
 $(document).ready(function() {
 
-	var clique = 0;
-	$('.bouton_menu').append('<span class="lien">Menu</span>');
-	$('#menu1').hide();
-	$('#conteneur_menu').hide();
+	$('.sub_menu').hide();
 
-	$('.lien').click(function(){
-		if(clique == 0){
-
-			clique = 1;
-			$('#conteneur_menu').fadeIn(300);
-			$('#conteneur_menu').css('z-index', '11');
-			$('#conteneur-sepia').addClass('sepia');
-			$('#conteneur-sepia').addClass('opacity');
-			$('#header').addClass('sepia');
-		}
-		else
-		{
-			clique = 0;
-			$('#conteneur_menu').fadeOut(300);
-			$('#conteneur-sepia').removeClass('sepia');
-			$('#conteneur-sepia').removeClass('opacity');
-			$('#header').removeClass('sepia');
-		}
-
+	$('.conteneur_bouton').mouseleave(function() {
+		$(this).find('.sub_menu').hide();
 	});
+
+	$('.conteneur_bouton').mouseover(function() {
+		$(this).find('.sub_menu').show();
+	});
+
 });

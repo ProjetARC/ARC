@@ -79,7 +79,10 @@ a {
 }
 	
 	#contenu p {
-		color:black;
+		color:black;	
+	}
+
+	.alinea {
 		text-indent: 20px;
 	}
 	
@@ -121,58 +124,89 @@ a {
 
 /************* MENU *************/
 
-#navigation1 {
+#navigation {
 	float:right;
+	height: 50px;
 }
-
-		#menu1 a {
-			display :block;
-			margin-left:5px;
+		#menu a {
+			display: block;
+			text-align: center;
+			margin-top: 5px;
+			margin-left: 5px;
 		}
 
-			#menu1 a span {
-				font-size: 20px;
+			#menu a span {
+				font-size: 18px;
 			}
 
-		#menu1 li {
-			display:inline-block;
-			padding-right:5px;
+		#menu li {
+			display: inline-block;
+			padding-right: 10px;
 		}
 
-		#menu1 li:hover {
-			border-bottom:2px solid #F5931F;
-		}
-
-			#menu1 li:hover span {
-				color:#F5931F;
+			#menu li:hover span {
+				color:#013A58;
+				text-shadow:1px 1px 1px rgba(255,255,255,0.50);
 			}
 
 			.page {
-				border-bottom:2px solid #0089CF;
 			}
 
 				.page a span{
 					color: #0089CF;
 				}
 
+.sub_menu{
+    background-color: #f1f1f1;
+    position: absolute;
+    margin-top: 7px;
+    width: 300px;
+    height: auto;
+    border-top: 4px solid #0088cf;
+    box-shadow: inset 0px 3px 7px rgba(0,0,0,0.25);
+}
+
+.sub_menu li {
+    display: block;
+    margin-top: 10px;
+}
+
+.sub_menu li a {
+	margin-bottom: 5px;
+	width: 280px;
+}
+
+.sub_menu ul {
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.sub_menu li a:hover {
+    color: #0088cf;
+}
+
 /************* CONTACT *************/
 
-
+.info-contact {
+	width: auto;
+	height: 400px;
+	margin-top: 25px;
+}
 
 	.google-map {
-		position:absolute;
 		float:left;
-		height:;
 	}
 
 		#map {
-			height:500px;
+			height:400px;
 			width:500px;
 		}
 
 	.info-contact p {
 		top:0;
 		float:right;
+		margin-right: 50px;
 	}
 
 /************* CONTENEUR INDEX *************/
@@ -305,7 +339,7 @@ a {
 }
 
 #footer table {
-	margin: 0 auto;
+	margin: 0 auto;	
 }
 
 #pre-footer {
@@ -324,21 +358,16 @@ a {
 	border-top:4px solid #F5931F;
 }
 
-/************* CONTENU PRESTATIONS **************/
+/************* CONTENU SOLUTIONS **************/
 
-.contenu_prestations ul li{
+.contenu_solutions {
+	width: 600px;
+	display: inline-block;
+	margin-left: 40px;
+}
+
+.contenu_solutions ul li{
 	list-style-type: disc;
-}
-
-.plus {
-	float: right;
-	font-size: 22px;
-	font-style: bold;
-	color: #E7E6E6;
-}
-
-.clique {
-	cursor: pointer;
 }
 
 /*************** LOGO PARTENAIRES *************/
@@ -355,12 +384,17 @@ a {
 
 .conteneur_bouton
 {
-	float:right;
-	margin-top:15px;
+	margin-top:0px;
 	width:100px;
 	height:35px;
-	background: -webkit-linear-gradient(top, #66C9FB 2%, #0089CF 100%);;
 }
+
+	.conteneur_bouton:hover {
+		background: -webkit-linear-gradient(top, #66C9FB 2%, #0089CF 100%);
+		background: -ms-linear-gradient(top, #66C9FB 2%, #0089CF 100%);
+		background: -moz-linear-gradient(top, #66C9FB 2%, #0089CF 100%);
+		background: -o-linear-gradient(top, #66C9FB 2%, #0089CF 100%);
+	}
 
 	.lien {
 		width:100px;
@@ -375,3 +409,84 @@ a {
 		font-weight: bold;
 		cursor:pointer;
 	}
+
+
+/************* MENU SOLUTIONS *****************/
+
+#menu_solutions {
+	float: left;
+	width: 200px;
+	height: 100%;
+	border-right: 1px solid #E7E6E6;
+}
+
+#menu_solutions ul {
+	padding: 0;
+	margin: 0;
+	margin-right: 20px;
+	margin-top: 50px;
+}
+
+#menu_solutions ul li{
+	margin-top: 15px;
+}
+
+
+/*************** FORM CONTACT *******************/
+
+.contact_mail {
+		width: 750px;
+		margin: 0 auto;
+		margin-top: 45px;
+}
+
+.form_info {
+	width: 300px;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.form_info input{
+	height: 30px;
+	width: 350px;
+	margin-bottom: 20px;
+	border: 0px;
+	border-top: 1px solid #c2c2c2;
+	background-color: #ececec;
+	padding-left: 5px;
+}
+
+.form_message {
+	display: inline-block;
+	float: right;
+}
+	
+	.form_message textarea {
+		resize:none;
+		border: 0px;
+		border-top: 1px solid #c2c2c2;
+		background-color: #ececec;
+		width: 350px;
+		height: 133px;
+		padding-left: 5px;
+	}
+
+.form_envoi {
+	width: 100%;
+	display: block;
+	text-align: center;
+	clear: both;
+}
+
+.form_envoi input {
+	width: 80px;
+	height: 40px;
+	background: #F5931F;
+	border: 0px;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	border-radius: 2px 2px 2px 2px;
+}

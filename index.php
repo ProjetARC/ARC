@@ -35,57 +35,35 @@
 		<div id='cpt'></div>
 		<!-- bloc qui  affiche les informations de l'entreprise -->
 		<div id='contenu'>
-			<div id='presentation'>
-				<div class='titre orange'>
-					<span class='text'>Qui sommes-nous ?</span>
-					<span class='trait'>
-					</span>
-				</div>
-				
-				<p>La société ARC Informatique, 
-					créée en 1993, a réussi à hisser 
-					parmi les entreprises les plus 
-					performantes du Sénégal, 
-					elle dispose d'une équipe 
-					d'ingénieurs expérimentés, 
-					maîtrisant l'Audit, le Design, 
-					la Gestion de Projets, 
-					et les Services managés.
-				<br/>
-				<br/>
-					Tout au long de son parcours,
-					ARC s’est démarquée en tant qu’intégrateur de solutions allant de la mise en oeuvre de solutions informatiques complexes, 
-					au développement d’applications de gestion intégrées.
-				<br/>
-				<br/>
-					Ainsi, de part sa notoriété, ARC a noué des partenariats avec des opérateurs internationaux.
-					Par ailleurs, elle a signé des accords stratégiques avec des constructeurs et éditeurs leaders sur le marché de l'informatique.
-				<br/>
-				<br/>
-				</p>
-			</div>
-			
-			<!-- bloc qui permet d'accéder au webmail -->
-			<div id='webmail'>
-				<div class='titre bleu'>
-					<span class='text'>Webmail</span>
-					<span class='trait'>
-						
-					</span>
-				</div>
-				<div class='webmail_contenu'>
-					<p> Pour accèder à votre Webmail 
-						il vous suffit de taper l'adresse : 
-					</p>
-					<p>
-						<a href='http://webmail.arc.sn'>http://webmail.arc.sn</a> 
-						ou de cliquer sur l'icone ci-dessous.
-					</p>
-				</div>
-				<div class='webmail_logo'>
-					<a href='http://webmail.arc.sn'><img class='logo_webmail' src='images/webmail.png'/></a>
-				</div>
-			</div>
+
+			<?php
+
+				$req = "SELECT * FROM articles, pages, couleur WHERE pages.idPage = articles.page AND couleur.idCouleur = articles.couleur AND libellePage = 'Accueil' ORDER BY ordreArticle";
+				$res = mysql_query($req);
+				$ligne = mysql_fetch_array($res);
+
+				while($ligne)
+				{
+					echo('<div>');
+						echo('<div class="titre '.$ligne['libelleCouleur'].'">');
+							echo('<span class="text">');
+
+							echo(utf8_encode($ligne['titreArticle']));
+
+							echo('</span>');
+							echo('<span class="trait">');
+							echo('</span>');
+						echo('</div>');
+
+						echo('<div>');
+							echo(utf8_encode($ligne['contenuArticle']));
+						echo('</div>');
+					echo('</div>');
+
+					$ligne = mysql_fetch_array($res);
+				}
+			?>
+
 		</div>
 		
 		<!-- include qui permet l'affichage du pied de page -->
